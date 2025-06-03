@@ -1,0 +1,203 @@
+(footprint "X27-168"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "The x27.168 Automotive Gauge Stepper Motor")
+	(tags "Stepper")
+	(property "Reference" "M1"
+		(at 0 3 0)
+		(layer "F.SilkS")
+		(uuid "e33f2053-dc8b-447c-ab92-08ebe1c4f2cb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "X27.168"
+		(at 0 -2.4 0)
+		(layer "F.SilkS")
+		(uuid "bdc96461-2fe0-425d-8f7d-53735cd2f68b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e84dbdcd-ff67-43ea-9eb6-e6a4af7ab759")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "The x27.168 Automotive Gauge Stepper Motor"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fb6af189-8a17-41de-a9bf-ea2330d5b11f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.4 14)
+		(end 5.4 14)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9504c625-9b59-4991-987c-5747fa7a5a03")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 15 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "43724551-2e0d-4189-8c03-c0658f17a4ec")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 18.55 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "c2f447d2-63c4-4925-988f-13fbfe514477")
+	)
+	(fp_text user "1"
+		(at 9.4 -3.8 0)
+		(layer "F.SilkS")
+		(uuid "27cf37c2-dae3-49c3-b3a2-89ed3e745738")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "3"
+		(at -9.6 3.8 0)
+		(layer "F.SilkS")
+		(uuid "54ae035a-d462-40ab-8795-f37dea237124")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "4"
+		(at -9.6 -3.8 0)
+		(layer "F.SilkS")
+		(uuid "60f0f5fc-8fc5-4570-874f-fe04e2b62a1a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "2"
+		(at 9.6 3.8 0)
+		(layer "F.SilkS")
+		(uuid "8b785acc-0758-40b1-82bf-16dcb8d67242")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -13.5 0)
+		(size 1.8 1.8)
+		(drill 1.8)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "6fcafc1f-06c3-454e-adbf-152e6bd69530")
+	)
+	(pad "" np_thru_hole circle
+		(at -9 9)
+		(size 2.5 2.5)
+		(drill 2.5)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "8559dac5-5a31-42b6-a9c6-b579ede7910b")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 -10)
+		(size 3.8 3.8)
+		(drill 3.8)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "5a8f66ae-dd3b-43f4-99d2-9c03b3d6beba")
+	)
+	(pad "" np_thru_hole circle
+		(at 13.5 0)
+		(size 1.8 1.8)
+		(drill 1.8)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "2211f7c9-2ca8-4664-93a2-4330583fd163")
+	)
+	(pad "1" thru_hole circle
+		(at 11.43 -3.81)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "181f6b89-caa7-4d18-a2c1-1a46fdba5735")
+	)
+	(pad "2" thru_hole circle
+		(at 11.43 3.81)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ee21089e-6f56-470c-bb49-16a6770888d9")
+	)
+	(pad "3" thru_hole circle
+		(at -11.43 3.81)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4488dfd0-98ee-4eeb-83ed-e3fa1d561e11")
+	)
+	(pad "4" thru_hole circle
+		(at -11.43 -3.81)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "571326d3-4e48-499f-a6f8-3b8d6bcac425")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/x27168.step"
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
+	)
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Circuit_Stepper")(type "KiCad")(uri "${KIPRJMOD}/Circuit_Stepper.pretty")(options "")(descr ""))
+)
