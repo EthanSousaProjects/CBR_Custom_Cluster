@@ -1,18 +1,25 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+#include <Stepper.h> // External Package needed for controller steppers easily.
+
+Stepper gauge_stepper(600, 8, 4, 19, 13); // Defining step count and digitial pins used.
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  // Setting RPM of motor test ideal speed here.
+  gauge_stepper.setSpeed(19);
+  // Note through testing rpm of 20 appears to be the max rpm that works well on the stepper.
+  // Therefore all future usage will use an rpm of 19 to work quickly with a small ammount of head room for slight stepper differences
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
+  // loop of moving the stepper consitantly.
+  gauge_stepper.step(600);
+  delay(1000);
+  gauge_stepper.step(-600);
+  delay(1000);
+  gauge_stepper.step(300);
+  delay(1000);
+  gauge_stepper.step(-300);
+  delay(1000);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
