@@ -37,13 +37,12 @@ void loop() {
     rpm = 1;
   }
   Serial.println("Running at " + String(rpm) + " RPM, press any key to stop/ change RPM");
-  rpm = atoi(input_rpm);
   hz = rpm/60; //Freqency of pulse
   t = (1.0/hz) * 1000; // Wave time period in millisecounds
   // Signal is approximatly a 6.67% duty cycle pwm signal so setting that up and running it.
   on_time_mill = int(t * 0.0667);
   on_time_micro = int(((t*0.0667)- on_time_mill)* 1000);
-  off_time_mill = int(t - float(on_time_mill));
+  off_time_mill = int(t - float(on_time_mill) - (float(on_time_micro)/1000));
   off_time_micro = int((t*1000) - (on_time_mill*1000) - on_time_micro - (off_time_mill*1000));
   // Some rounding errors will occur above due to rounding of ints and floats but should be close enough.
   while (!Serial.available()) { // While loop waiting for a keyboard press, Runs signal until told to stop
