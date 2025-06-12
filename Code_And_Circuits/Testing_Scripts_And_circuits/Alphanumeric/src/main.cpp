@@ -35,14 +35,6 @@ void loop()
 
   // Loop will cycle between 0 and 100 km then miles with a slight delay to see how fast we can update the display and how it all looks
   // Miles is M in 4th position and Kilometers is K.
-  display.clear();
-  display.printChar('k',3);
-  display.updateDisplay();
-  delay(1000);
-  display.clear();
-  display.printChar('m',3);
-  display.updateDisplay();
-  delay(1000);
   for(int i = 0; i <=100; i++){
     // Displaying numbers from 0 to 100.
     display.clear(); // Clear contents of display
@@ -51,12 +43,23 @@ void loop()
     for(unsigned int j = value_length_addition; j < 3;j++){
       display.printChar(value.charAt(j-value_length_addition),j);
     }
-    display.printChar('K',3);
+    display.printChar('k',3);
+    display.updateDisplay();
+    delay(200);
+
+  }
+  for(int i = 0; i <=100; i++){
+    // Displaying numbers from 0 to 100.
+    display.clear(); // Clear contents of display
+    value = String(i);
+    value_length_addition = 3 - int(value.length());
+    for(unsigned int j = value_length_addition; j < 3;j++){
+      display.printChar(value.charAt(j-value_length_addition),j);
+    }
+    display.printChar('m',3);
     display.updateDisplay();
     delay(200);
 
   }
 
 }
-
-//TODO: functionize the updating of the values so that function can be put into main code instead of this.
