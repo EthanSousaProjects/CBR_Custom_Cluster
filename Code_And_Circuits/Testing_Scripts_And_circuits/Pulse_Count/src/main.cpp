@@ -1,19 +1,21 @@
 #include <Arduino.h>
 
-int wheel_pulses_per_rotation = 6, rpm = 0, speed = 0, pin_rpm = 21, pin_speed = 21, measurement_time_length = 300;
-float wheel_circumfrance = 10; // In meters
+int wheel_pulses_per_rot = 6, rpm = 0, speed = 0, pin_rpm = 21, pin_speed = 21;
+float wheel_circumfrance = 1; // In meters
 
-// Function call for getting RPM pin_rpm = pin to measure from, measurement_time_length = sampling time length in ms.
+// Note wheel specs are just examples not the actual CBR values.
+
+// Function call for getting RPM pin_rpm = pin to measure from
 int measure_rpm(int pin_rpm);
-// Function call for getting speed pin_speed = pin to measure from, measurement_time_length = sampling time length in ms.
-int measure_speed(int pin_speed, int measurement_time_length);
+// Function call for getting speed pin_speed = pin to measure from, returns in m/s
+int measure_speed(int pin_speed, float wheel_circumfrance, int wheel_pulses_per_rot);
 
 void setup() {
   Serial.begin(9600); // Start serial monitor
 }
 
 void loop() {
-  speed = measure_speed(pin_speed, measurement_time_length);
+  speed = measure_speed(pin_speed,wheel_circumfrance,wheel_pulses_per_rot);
   rpm = measure_rpm(pin_rpm);
 
   Serial.print("Current Speed: ");
@@ -27,7 +29,7 @@ void loop() {
 int measure_rpm(int pin_rpm) {
   pinMode(pin_rpm,INPUT);
   int rpm;
-  unsigned long time_hi = pulseIn(pin_rpm,HIGH,60000); // Trying to get length of time that data pin input is high.
+  unsigned long time_hi = pulseIn(pin_rpm,HIGH,65000); // Trying to get length of time that data pin input is high.
   //Time out of 100ms as if no high signal in 100ms then rpm will be set to 0. Lowest reasonable rpm i want to see is 1000rpm.
   if (time_hi == 0){
     // No high signal detected during 100ms time frame therefore rpm = 0.
@@ -47,22 +49,25 @@ int measure_rpm(int pin_rpm) {
 }
 
 
-int measure_speed(int pin_speed, int measurement_time_length) {
+int measure_speed(int pin_speed, float wheel_circumfrance, int wheel_pulses_per_rot) {
   pinMode(pin_speed,INPUT);
-  boolean went_high = false;
-  unsigned long ms_start = millis(), ms_end = ms_start + ((unsigned long)measurement_time_length);
-  int pulse_count = 0;
-  while(millis() <= ms_end){
-    if(digitalRead(pin_speed) == HIGH && went_high == false){ // Counting pulses when signal rises to HIGH
-      ++pulse_count;
-      went_high = true;
+  int speed;
+  //Tune things on a real case as creating test case is nearly impossible for my application.
+  unsigned long time_hi = pulseIn(pin_rpm,HIGH,65000); // Trying to get length of time that data pin input is high.
+  //Time out of 100ms as if no high signal in 100ms then rpm will be set to 0. Lowest reasonable rpm i want to see is 1000rpm.
+  if (time_hi == 0){
+    // No high signal detected during 100ms time frame therefore rpm = 0.
+    return(0);
+  }
+  else{
+    unsigned long time_low = pulseIn(pin_rpm,LOW,125000);
+
+    if (pulseIn == 0){
+      return (0);
     }
-    else if(went_high == true && digitalRead(pin_speed) ==LOW){ // Resetting when signal goes back to LOW
-      went_high = false;
+    else{
+      return(int((wheel_circumfrance/float(wheel_pulses_per_rot))/(float(time_hi+time_low)/float(1000000))));
+      // doing distance over time.
     }
   }
-  Serial.println(pulse_count);
-  //TODO: fix math here for speed calc based on inputs is just rpm one for now.
-  //TODO: Make speed pulse count like rpm count and tune values
-  return(int((float(pulse_count)/ float(measurement_time_length)) * 60000)); // First bit gets pulses per secound then * 60000 to get pulses per minute = rpm and for conversion of ms to s.
 }
