@@ -1,0 +1,195 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "619a717f-b37a-4dd9-96af-345e6fd91ffe")
+	(paper "A4")
+	(title_block
+		(title "Full CBR125RW6 Dash Project Schematic")
+		(rev "1")
+		(company "Ethan Sousa Projects")
+	)
+	(lib_symbols)
+	(sheet
+		(at 187.96 88.9)
+		(size 78.74 62.23)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5c5ebc8e-da13-4330-b943-b878a884f7bc")
+		(property "Sheetname" "Data_Display_Controller"
+			(at 187.96 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Data_Display_Controller.kicad_sch"
+			(at 187.96 151.7146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Full_Circuit"
+				(path "/619a717f-b37a-4dd9-96af-345e6fd91ffe"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 19.05)
+		(size 91.44 54.61)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d1fa3f01-5726-4a75-8c16-44eebd2948ba")
+		(property "Sheetname" "External_Conections_Conditioning"
+			(at 101.6 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "External_Conections_Conditioning.kicad_sch"
+			(at 101.6 74.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Speed_Pulse" input
+			(at 163.83 73.66 270)
+			(uuid "7721d117-42ae-4669-9718-afda95a6bf49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Coolant" input
+			(at 193.04 49.53 0)
+			(uuid "3bfc2d68-b894-4d09-863d-bc3eadf1ef9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Fuel_A" input
+			(at 193.04 52.07 0)
+			(uuid "f33dd2e0-4c10-47de-b9a0-3924d086b83d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Fuel_B" input
+			(at 193.04 55.88 0)
+			(uuid "2a496825-3457-4db0-9dd1-5d0d63676e65")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RPM_Pulse" input
+			(at 193.04 59.69 0)
+			(uuid "7717d2b2-01b9-461b-9e8a-576dd3869636")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Full_Circuit"
+				(path "/619a717f-b37a-4dd9-96af-345e6fd91ffe"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 90.17)
+		(size 80.01 68.58)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "eb8305a9-ba65-4db5-89d2-7eddef7f3a2f")
+		(property "Sheetname" "Logging_Controller"
+			(at 25.4 89.4584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Logging_Controller.kicad_sch"
+			(at 25.4 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Full_Circuit"
+				(path "/619a717f-b37a-4dd9-96af-345e6fd91ffe"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
