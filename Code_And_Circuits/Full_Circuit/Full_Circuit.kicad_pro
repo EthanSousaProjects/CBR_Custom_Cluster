@@ -58,7 +58,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|144744650|127366150|5255272f-97b8-4416-a50a-a990512035c5|b5b82d1b-62a1-4c66-a79c-fc3cbbd92a80",
+          ""
+        ],
+        [
+          "clearance|176344650|127366150|fa5711ff-7506-4826-9242-2eb83b795bdf|cfabe639-1276-41f3-a38a-5514c392dfda",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -491,7 +500,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
-        "via_diameter": 0.6,
+        "via_diameter": 0.8,
         "via_drill": 0.3,
         "wire_width": 6
       },
