@@ -2576,8 +2576,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "05d76e46-1b3f-4127-b8f9-568e07932ff8")
 		(property "Reference" "TP4"
 			(at 140.208 82.296 0)
@@ -2907,8 +2907,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "6d95bac3-8227-4246-9464-e309d2c5f5d1")
 		(property "Reference" "TP6"
 			(at 140.208 89.916 0)
@@ -2974,8 +2974,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "6f22d145-6338-4936-8015-47275641edac")
 		(property "Reference" "M3"
 			(at 115.824 137.16 0)
@@ -2993,7 +2993,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Added_Footprints:BMI160_Module"
 			(at 115.57 151.13 0)
 			(effects
 				(font
@@ -3071,8 +3071,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6f749907-983a-4623-adcb-4adc84b57da2")
 		(property "Reference" "J1"
@@ -3160,8 +3160,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "6f7fb706-5c98-4b18-8682-ef7942e257d2")
 		(property "Reference" "C16"
 			(at 159.004 93.726 0)
@@ -3227,8 +3227,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "76eb35ce-c352-4dfa-a2d6-a94ed15a4d2a")
 		(property "Reference" "M1"
@@ -3500,8 +3500,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "a8978602-5bee-4c26-8232-c4c50213a9fa")
 		(property "Reference" "TP5"
 			(at 140.208 87.376 0)
@@ -3567,8 +3567,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b9630e9b-c637-43cd-aaeb-f04674a21fea")
 		(property "Reference" "A3"

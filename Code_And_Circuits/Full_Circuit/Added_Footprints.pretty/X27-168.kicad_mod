@@ -75,7 +75,7 @@
 	)
 	(fp_circle
 		(center 0 0)
-		(end 18.55 0)
+		(end 17.5 0)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -83,6 +83,17 @@
 		(fill no)
 		(layer "F.CrtYd")
 		(uuid "c2f447d2-63c4-4925-988f-13fbfe514477")
+	)
+	(fp_circle
+		(center 0 -6)
+		(end 1 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "21bede28-15e4-4c7f-863e-4d475f6205d7")
 	)
 	(fp_text user "1"
 		(at 9.4 -3.8 0)
@@ -126,6 +137,19 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
+		)
+	)
+	(fp_text user "Needle Position"
+		(at -6 -6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2ae75c38-aefb-4182-8311-94a6da082836")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
 		)
 	)
 	(pad "" np_thru_hole circle

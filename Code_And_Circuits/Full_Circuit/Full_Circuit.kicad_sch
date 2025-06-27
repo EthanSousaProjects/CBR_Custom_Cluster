@@ -503,16 +503,18 @@
 		)
 		(uuid 45947ac8-766c-487f-a9c3-0de22c355cc9)
 	)
-	(text "Add in tachometer reference foot print for layout help"
+	(text "Due to Space Constraints.\nVersion 1 of this design Omits some aspects of the prefered design like a data logger\nFuture designs could include it with a rethink of the intended design."
 		(exclude_from_sim no)
-		(at 167.894 58.928 0)
+		(at 176.784 19.304 0)
 		(effects
 			(font
-				(size 5 5)
-				(color 0 0 255 1)
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+				(color 255 0 0 1)
 			)
 		)
-		(uuid "481a4930-f840-4db4-9aab-6d01a1838014")
+		(uuid "2b078f49-c7a4-4040-9231-2edcac192952")
 	)
 	(text "Mounting and References"
 		(exclude_from_sim no)
@@ -590,7 +592,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 76.2) (xy 177.8 139.7)
+			(xy 177.8 78.74) (xy 177.8 139.7)
 		)
 		(stroke
 			(width 1)
@@ -634,7 +636,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 76.2) (xy 152.4 88.9)
+			(xy 152.4 78.74) (xy 152.4 88.9)
 		)
 		(stroke
 			(width 1)
@@ -656,7 +658,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 76.2) (xy 165.1 114.3)
+			(xy 165.1 78.74) (xy 165.1 114.3)
 		)
 		(stroke
 			(width 1)
@@ -700,7 +702,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 76.2) (xy 158.75 101.6)
+			(xy 158.75 78.74) (xy 158.75 101.6)
 		)
 		(stroke
 			(width 1)
@@ -711,7 +713,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 76.2) (xy 171.45 127)
+			(xy 171.45 78.74) (xy 171.45 127)
 		)
 		(stroke
 			(width 1)
@@ -747,7 +749,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Added_Footprints:Dial_Gauge_Reference_CBF600"
 			(at 31.75 54.61 0)
 			(effects
 				(font
@@ -853,8 +855,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4d6bb397-4ff8-4a8e-a75e-cfc2aaf811c3")
 		(property "Reference" "H4"
@@ -1132,7 +1134,7 @@
 		)
 	)
 	(sheet
-		(at 101.6 26.67)
+		(at 101.6 29.21)
 		(size 88.9 49.53)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1148,7 +1150,7 @@
 		)
 		(uuid "d1fa3f01-5726-4a75-8c16-44eebd2948ba")
 		(property "Sheetname" "External_Conections_Conditioning"
-			(at 101.6 25.9584 0)
+			(at 101.6 28.4984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1157,7 +1159,7 @@
 			)
 		)
 		(property "Sheetfile" "External_Conections_Conditioning.kicad_sch"
-			(at 101.6 76.7846 0)
+			(at 101.6 79.3246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1166,7 +1168,7 @@
 			)
 		)
 		(pin "Coolant" output
-			(at 177.8 76.2 270)
+			(at 177.8 78.74 270)
 			(uuid "6b38e58a-953e-461e-9fb1-f7c3440397de")
 			(effects
 				(font
@@ -1176,7 +1178,7 @@
 			)
 		)
 		(pin "Fuel_A" output
-			(at 165.1 76.2 270)
+			(at 165.1 78.74 270)
 			(uuid "b7386913-1bb4-48f9-9646-e6e2482ead5c")
 			(effects
 				(font
@@ -1186,7 +1188,7 @@
 			)
 		)
 		(pin "Fuel_B" output
-			(at 171.45 76.2 270)
+			(at 171.45 78.74 270)
 			(uuid "8187efdf-c218-436e-aa86-ca2499c4f637")
 			(effects
 				(font
@@ -1196,7 +1198,7 @@
 			)
 		)
 		(pin "RPM_Pulse" output
-			(at 158.75 76.2 270)
+			(at 158.75 78.74 270)
 			(uuid "44b89ae0-d04f-435e-807b-7f3912378954")
 			(effects
 				(font
@@ -1206,7 +1208,7 @@
 			)
 		)
 		(pin "Speed_Pulse" output
-			(at 152.4 76.2 270)
+			(at 152.4 78.74 270)
 			(uuid "3330354c-a08b-4341-9c1a-1180245dfbca")
 			(effects
 				(font
