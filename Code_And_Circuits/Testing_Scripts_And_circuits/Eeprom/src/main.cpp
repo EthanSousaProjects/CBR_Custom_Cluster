@@ -84,7 +84,6 @@ void loop() {
 
   else if (option_selection == '4'){
     // Reading number list and outputting highest value and eeprom position
-    //TODO: Add in functionality to handle when reaching the end of the eeprom memopry to be able to write over some original data at the first index.
     Serial.println("Finding Highest value and address of the value");
     for (int i = odometer_start_index; i<=odometer_last_potential_index; i = i+4){
       // Reading each eeprom odometer address in turn to find the highest value
